@@ -38,7 +38,7 @@ class CategoriesController < ApplicationController
   end
 
   def destroy
-    category = Category.find(params[:id]).destroy
+    @category = Category.find(params[:id]).destroy
     redirect_to(:action => 'index')
   end
 

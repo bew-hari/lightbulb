@@ -1,17 +1,20 @@
 Rails.application.routes.draw do
 
+  resources :posts
+  get 'posts/show'
+  get 'posts/new'
+  get 'posts/edit'
+  get 'posts/delete'
+
+  resources :feed
+  get 'feed/index'
+
   resources :categories
-
   get 'categories/index'
-
   get 'categories/show'
-
   get 'categories/new'
-
   get 'categories/edit'
-
   get 'categories/delete'
-
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

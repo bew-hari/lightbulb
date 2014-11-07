@@ -14,6 +14,10 @@
  *= require_self
  */
 
+.dropdown-text {
+    padding-left: 10px;
+}
+
 
 .col-centered {
     display: block;
@@ -30,6 +34,7 @@
     background-image:url('http://goo.gl/5nBWrn');
     background-position: center top;
     height: 100vh;
+    min-height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
 }
