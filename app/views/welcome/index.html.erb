@@ -10,15 +10,19 @@
       <a class="navbar-brand" href="#">lightbulb</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <form class="navbar-form navbar-right" role="form">
+      <form class="navbar-form navbar-right form-inline" role="form">
         <div class="form-group">
           <input type="text" placeholder="Email" class="form-control">
         </div>
         <div class="form-group">
           <input type="password" placeholder="Password" class="form-control">
         </div>
-        <button type="submit" class="btn btn-success">Sign in</button>
+        <button type="submit" class="btn btn-primary">Sign in</button>
       </form>
+      <!--<div class="navbar-form navbar-right">
+        <a href="#"><button type="submit" class="btn btn-primary">Sign Up</button></a>
+        <a href="#"><button type="submit" class="btn btn-primary">Log In</button></a>
+      </div>-->
     </div><!--/.navbar-collapse -->
   </div>
 </nav>
@@ -27,24 +31,26 @@
 <div class="jumbotron">
   <div class="container">
     <h1>Hello, this is Lightbulb.</h1>
-    <p>Add some text here</p>
+    <p>Add some text here.. maybe?</p>
     <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
-    <div class="col-md-5 col-centered">
+    <div class="col-md-5 col-centered" style="top: 100px">
       <form class="form-inline" role="form">
-        <div class="form-group">
+        <input type="text" placeholder="Where are you?" class="form-control">
+        <input type="number" min="0" step="0.5" placeholder="Search radius (mi)" class="form-control">
+        <button type="submit" class="btn btn-success">Search</button>-->
+        <!--<div class="form-group">
           <input type="text" placeholder="Where are you?" class="form-control">
         </div>
         <div class="form-group">
           <input type="number" min="0" step="0.5" placeholder="Search radius (mi)" class="form-control">
         </div>
-        <button type="submit" class="btn btn-success">Search</button>
+        <button type="submit" class="btn btn-success">Search</button>-->
       </form>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-4">
       <h2>Heading</h2>

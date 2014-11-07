@@ -14,9 +14,6 @@
  *= require_self
  */
 
-body {
-    padding-top: 50px;
-}
 
 .col-centered {
     display: block;
@@ -26,7 +23,8 @@ body {
 
 
 .jumbotron {
-    background-image:url('http://goo.gl/04j7Nn');
+    background-image:url('http://goo.gl/5nBWrn');
+    background-position: center center;
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +38,7 @@ body {
 .jumbotron h1 {
     color: #fff;
     font-size: 48px;
-    font-family: 'Shift', sans-serif;
+    font-family: sans-serif;
     font-weight: bold;
 }
 
