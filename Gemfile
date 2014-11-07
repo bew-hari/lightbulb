@@ -7,17 +7,10 @@ gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
-# Use sqlite3 for development and test
-group :development, :test do
-  gem 'sqlite3'
-end
-
-# Use postgresql for Active Record
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-  gem 'unicorn'
-end
+# Use postgresql as the database for Active Record
+gem 'pg'
+gem 'rails_12factor', group: :production
+gem 'unicorn'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

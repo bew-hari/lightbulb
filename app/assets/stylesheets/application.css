@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    padding-top: 50px;
+}
+
+.col-centered {
+    display: block;
+    float: none;
+    margin: 0 auto;
+}
+
+
+.jumbotron {
+    background-image:url('http://goo.gl/04j7Nn');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .container {
+    position: relative;
+    top:100px;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Shift', sans-serif;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    color: #fff;
+}
