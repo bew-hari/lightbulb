@@ -73,11 +73,18 @@
             <li class="active feed-category">
               <a href="#"><span class="glyphicon glyphicon-th"></span></a>
             </li>
-            <% @categories.each do |category| %>
-                <li class="feed-category">
-                  <a href="#"><span class="glyphicon glyphicon-<%= category.name.downcase %>"></span></a>
-                </li>
-            <% end %>
+            <% #@categories.each do |category| %>
+                <!--<li class="feed-category">
+                  <a href="#"><span class="glyphicon glyphicon-<%#= category.name.downcase %>"></span></a>
+                </li>-->
+            <% #end %>
+
+            <li class="feed-category"><a href="#"><span class="glyphicon glyphicon-film"></span></a></li>
+            <li class="feed-category"><a href="#"><span class="glyphicon glyphicon-music"></span></a></li>
+            <li class="feed-category"><a href="#"><span class="glyphicon glyphicon-camera"></span></a></li>
+            <li class="feed-category"><a href="#"><span class="glyphicon glyphicon-picture"></span></a></li>
+            <li class="feed-category"><a href="#"><span class="glyphicon glyphicon-tower"></span></a></li>
+
           </ul>
         </div>
         <div class="col-sm-9 col-md-10 post-area">
@@ -166,7 +173,7 @@
       </form>
 
       <br>
-      
+
       <h4>Search options</h4>
       <h5>Distance </h5>
       <form role="form">
