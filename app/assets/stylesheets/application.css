@@ -14,6 +14,10 @@
  *= require_self
  */
 
+body {
+    padding-top: 50px;
+}
+
 .dropdown-text {
     padding-left: 10px;
 }
@@ -39,10 +43,6 @@
     background-size: cover;
 }
 
-.jumbotron .container {
-    position: relative;
-    top:100px;
-}
 
 .jumbotron h1 {
     color: #fff;
@@ -54,4 +54,61 @@
 .jumbotron p {
     font-size: 20px;
     color: #fff;
+}
+
+
+.sidebar {
+    display: none;
+}
+@media (min-width: 768px) {
+    .sidebar {
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        border-right: 1px solid #eee;
+    }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #aaa;
+}
+
+.feed-category {
+    text-align: center;
+    font-size: 4em;
+}
+
+.feed-category a {
+    color: #666;
+}
+
+.feed-category .glyphicon {
+    line-height: inherit;
+}
+
+/* Main content */
+@media (min-width: 768px) {
+    .post-area {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.post-area .page-header {
+    margin-top: 0;
 }

@@ -11,3 +11,5 @@ film = Category.create(name: 'Film')
 music = Category.create(name: 'Music')
 theatre = Category.create(name: 'Theatre')
 videogame = Category.create(name: 'Video Game')
+
+# Some sample posts
