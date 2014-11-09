@@ -35,7 +35,6 @@ body {
 
 
 .jumbotron {
-    background-image:url('http://goo.gl/5nBWrn');
     background-position: center top;
     height: 100vh;
     min-height: 550px;
@@ -111,4 +110,16 @@ body {
 }
 .post-area .page-header {
     margin-top: 0;
+}
+
+.post {
+    border-bottom: 1px solid #eee;
+}
+
+.post-img {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    max-height: 300px;
 }

@@ -64,32 +64,134 @@
 <div class="container">
   <div class="row"></div>
     <div class="col-md-9">
-      <h1 class="page-header">Your Feed</h1>
-        <div class="row">
-          <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-              <li class="active feed-category">
-                <a href="#"><span class="glyphicon glyphicon-th"></span></a>
-              </li>
-              <% @categories.each do |category| %>
-                  <li class="feed-category">
-                    <a href="#"><span class="glyphicon glyphicon-<%= category.name.downcase %>"></span></a>
-                  </li>
-              <% end %>
-            </ul>
-          </div>
-          <div class="col-sm-9 col-md-10 post-area">
-            <% @posts.each do |post| %>
-              <div class="row">
-                <span class="listing-title"><%= post.title %></span>
-              </div>
-            <% end %>
 
-          </div>
+      <h1 class="page-header">Your Feed</h1>
+
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active feed-category">
+              <a href="#"><span class="glyphicon glyphicon-th"></span></a>
+            </li>
+            <% @categories.each do |category| %>
+                <li class="feed-category">
+                  <a href="#"><span class="glyphicon glyphicon-<%= category.name.downcase %>"></span></a>
+                </li>
+            <% end %>
+          </ul>
         </div>
+        <div class="col-sm-9 col-md-10 post-area">
+
+          <div class="post">
+            <div class="row">
+              <h3>This Project</h3>
+              <img src="http://goo.gl/hcc4ib" class="img-rounded post-img">
+            </div>
+            <div class="row">
+              <div class="col-md-9">
+                <h4>Description</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-3">
+                <h4>Looking for</h4>
+                <ul>
+                  <li>Position 1</li>
+                  <li>Position 2</li>
+                  <li>Position 3</li>
+                </ul>
+                <p><a class="btn btn-default" href="#" role="button">Apply &raquo;</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="row">
+              <h3>That Project</h3>
+              <img src="http://goo.gl/LGbA7M" class="img-rounded post-img">
+            </div>
+            <div class="row">
+              <div class="col-md-9">
+                <h4>Description</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-3">
+                <h4>Looking for</h4>
+                <ul>
+                  <li>Position 1</li>
+                  <li>Position 2</li>
+                  <li>Position 3</li>
+                </ul>
+                <p><a class="btn btn-default" href="#" role="button">Apply &raquo;</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="row">
+              <h3>Another Project</h3>
+              <img src="http://goo.gl/BheHW2" class="img-rounded post-img">
+            </div>
+            <div class="row">
+              <div class="col-md-9">
+                <h4>Description</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-3">
+                <h4>Looking for</h4>
+                <ul>
+                  <li>Position 1</li>
+                  <li>Position 2</li>
+                  <li>Position 3</li>
+                </ul>
+                <p><a class="btn btn-default" href="#" role="button">Apply &raquo;</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
     <div class="col-md-3">
-      <h1 class="page-header">Side Column</h1>
+
+      <h1 class="page-header">Filters</h1>
+
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <input type="text" placeholder="Keywords" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Search</button>
+      </form>
+
+      <br>
+      
+      <h4>Search options</h4>
+      <h5>Distance </h5>
+      <form role="form">
+        <div class="checkbox">
+          <label><input type="checkbox" name="distance" value="1"> 0 - 1 miles</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="distance" value="3"> 1 - 3 miles</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="distance" value="5"> 3 - 5 miles</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="distance" value="10"> 5 - 10 miles</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="distance" value="20"> 10 - 20 miles</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="distance" value="21"> 20+ miles</label>
+        </div>
+      </form>
+
+
+
     </div>
   </div>
 </div>
