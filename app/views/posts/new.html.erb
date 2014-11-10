@@ -1,2 +1,163 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/feed">lightbulb</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-plus"></span> New Project</a></li>
+        <li><a href="/posts">Your Projects</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> John Doe<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="dropdown-text"> Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-file"></span>
+                <span class="dropdown-text"> Auditions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="dropdown-text"> Starred</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-list"></span>
+                <span class="dropdown-text"> History</span>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-cog"></span>
+                <span class="dropdown-text"> Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-off"></span>
+                <span class="dropdown-text"> Logout</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.navbar-collapse -->
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <h1 class="page-header">New Project</h1>
+
+      <form class="newpost-form" role="form" id="newpost">
+
+        <div class="row">
+          <div class="col-md-9">
+            <div class="form-group">
+              <input type="text" placeholder="Project Title" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <select class="form-control">
+              <option selected="true" style="display:none;">Media</option>
+              <option value="Film">Film</option>
+              <option value="Music">Music</option>
+              <option value="Photography">Photography</option>
+              <option value="Visual-Arts">Visual Arts</option>
+              <option value="Videogame">Video Game</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <textarea name="comment" form="newpost" placeholder="Description here" rows="6" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <h3>Roles Needed</h3>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="form-group">
+              <input type="text" placeholder="Project Title" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <select class="form-control">
+              <option selected="true" style="display:none;">Role Type</option>
+              <option value="Film">Option 1</option>
+              <option value="Music">Option 2</option>
+              <option value="Photography">Option 3</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <textarea name="comment" form="newpost" placeholder="Description here" rows="4" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="thumbnail">
+              <a href="#">
+                <div class="caption">
+                  <span class="glyphicon glyphicon-plus"></span>
+                  <span class="">Add role</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+    <div class="col-md-5">
+      <h1 class="page-header">Add Media</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <a href="#">
+              <div class="caption newpost-media">
+                <span class="glyphicon glyphicon-plus"></span>
+                <span class="">Add media</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <a href="#">
+              <div class="caption newpost-media">
+                <span class="glyphicon glyphicon-plus"></span>
+                <span class="">Add media</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

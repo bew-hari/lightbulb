@@ -123,3 +123,28 @@ body {
     height: auto;
     max-height: 300px;
 }
+
+
+
+
+
+/* New Post */
+.newpost-form textarea {
+    resize: none;
+}
+
+.newpost-media {
+    height: 180px;
+}
+
+
+/* Your Posts */
+.posts-sidebar {
+}
+
+.post-edit {
+    margin-top: 30px;
+    font-size: 1em;
+    text-align: right;
+    vertical-align: text-bottom;
+}
