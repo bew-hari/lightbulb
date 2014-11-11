@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  resources :apply
+  get 'apply/index'
+
+  resources :applications
+  get 'applications/index'
+  get 'applications/new'
+  get 'applications/show'
+  get 'applications/edit'
+  get 'applications/drop'
+
   resources :posts
   get 'posts/show'
   get 'posts/new'
