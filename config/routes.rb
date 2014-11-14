@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  resources :portfolio
+  get 'portfolio/index'
+  get 'portfolio/new'
+  get 'portfolio/show'
+  get 'portfolio/edit'
+  get 'portfolio/delete'
+
   resources :apply
   get 'apply/index'
 
@@ -18,6 +25,7 @@ Rails.application.routes.draw do
 
   resources :feed
   get 'feed/index'
+  get 'feed/show'
 
   resources :categories
   get 'categories/index'
